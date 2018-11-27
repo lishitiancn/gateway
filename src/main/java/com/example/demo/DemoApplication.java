@@ -14,7 +14,7 @@ public class DemoApplication {
 	@Bean
 	public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 		return builder.routes().route(
-				p -> p.path("/get").filters(f -> f.addRequestHeader("Hello", "World")).uri("http://www.pingan.com/"))
+				p -> p.path("/get").filters(f -> f.addRequestHeader("Hello", "World")).uri("https://www.pingan.com/official/handpick"))
 				.build();
 	}
 
