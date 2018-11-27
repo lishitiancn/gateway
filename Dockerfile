@@ -10,6 +10,6 @@ ADD target/gateway-0.0.1-SNAPSHOT.jar /usr/local/
 WORKDIR /usr/local/
 
 # execute command to compile nginx
-RUN java -jar gateway-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","gateway-0.0.1-SNAPSHOT.jar"]
 
 EXPOSE 8080
